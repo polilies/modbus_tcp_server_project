@@ -1,0 +1,67 @@
+>>> Warning 201 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\helpers.c" Line 189(1,1): Assignment inside relational expression
+>>> Warning 201 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\helpers.c" Line 264(1,1): Assignment inside relational expression
+>>> Warning 207 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\icmp.c" Line 116(1,1): Code has no effect
+>>> Warning 207 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\icmp.c" Line 153(1,1): Code has no effect
+>>> Warning 207 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\arp.c" Line 116(1,1): Code has no effect
+>>> Warning 207 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\stacktsk.c" Line 356(1,1): Code has no effect
+>>> Warning 207 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\stacktsk.c" Line 361(1,1): Code has no effect
+>>> Warning 207 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\stacktsk.c" Line 365(1,1): Code has no effect
+>>> Warning 207 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\stacktsk.c" Line 369(1,1): Code has no effect
+>>> Warning 207 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\stacktsk.c" Line 393(1,1): Code has no effect
+>>> Warning 207 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\stacktsk.c" Line 417(1,1): Code has no effect
+>>> Warning 207 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\stacktsk.c" Line 434(1,1): Code has no effect
+>>> Warning 207 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\stacktsk.c" Line 441(1,1): Code has no effect
+>>> Warning 207 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\stacktsk.c" Line 460(1,1): Code has no effect
+>>> Warning 207 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\stacktsk.c" Line 482(1,1): Code has no effect
+>>> Warning 207 "c:\users\akayikci\documents\kiþisel\elektronik\ccs c pic\uygulamalar\tcpserver_project\tcpip\stacktsk.c" Line 504(1,1): Code has no effect
+>>> Warning 208 "main.c" Line 25(6,22): Function not void and does not return a value  TCPConnectedTask
+*** Error 43 "main.c" Line 58(4,6): Expecting a declaration
+*** Error 43 "main.c" Line 58(7,8): Expecting a declaration
+*** Error 43 "main.c" Line 58(25,26): Expecting a declaration
+*** Error 43 "main.c" Line 58(25,26): Expecting a declaration
+*** Error 28 "main.c" Line 58(25,26): Expecting an identifier
+*** Error 43 "main.c" Line 58(25,26): Expecting a declaration
+*** Error 43 "main.c" Line 58(26,28): Expecting a declaration
+*** Error 43 "main.c" Line 58(29,30): Expecting a declaration
+*** Error 48 "main.c" Line 58(30,42): Expecting a (
+*** Error 48 "main.c" Line 58(43,48): Expecting a (
+*** Error 43 "main.c" Line 58(50,52): Expecting a declaration
+*** Error 29 "main.c" Line 58(76,77): Function definition different from previous definition  TCPIsPutReady Param#2
+*** Error 48 "main.c" Line 59(7,19): Expecting a (
+*** Error 48 "main.c" Line 59(20,25): Expecting a (
+*** Error 43 "main.c" Line 59(26,27): Expecting a declaration
+*** Error 43 "main.c" Line 59(31,32): Expecting a declaration
+*** Error 43 "main.c" Line 59(31,32): Expecting a declaration
+*** Error 28 "main.c" Line 60(32,33): Expecting an identifier
+*** Error 48 "main.c" Line 60(33,40): Expecting a (
+*** Error 48 "main.c" Line 60(41,46): Expecting a (
+*** Error 43 "main.c" Line 60(47,49): Expecting a declaration
+*** Error 43 "main.c" Line 60(49,50): Expecting a declaration
+*** Error 43 "main.c" Line 60(50,51): Expecting a declaration
+*** Error 32 "main.c" Line 61(30,36): Expecting a , or )
+*** Error 48 "main.c" Line 61(37,40): Expecting a (
+*** Error 43 "main.c" Line 61(41,42): Expecting a declaration
+*** Error 43 "main.c" Line 61(42,43): Expecting a declaration
+*** Error 43 "main.c" Line 63(4,5): Expecting a declaration
+*** Error 43 "main.c" Line 64(4,6): Expecting a declaration
+*** Error 43 "main.c" Line 64(7,8): Expecting a declaration
+*** Error 43 "main.c" Line 64(8,9): Expecting a declaration
+*** Error 43 "main.c" Line 64(26,27): Expecting a declaration
+*** Error 43 "main.c" Line 64(26,27): Expecting a declaration
+*** Error 28 "main.c" Line 64(26,27): Expecting an identifier
+*** Error 43 "main.c" Line 64(26,27): Expecting a declaration
+*** Error 43 "main.c" Line 64(26,27): Expecting a declaration
+*** Error 43 "main.c" Line 64(28,29): Expecting a declaration
+*** Error 48 "main.c" Line 65(7,19): Expecting a (
+*** Error 48 "main.c" Line 65(20,25): Expecting a (
+*** Error 43 "main.c" Line 65(26,27): Expecting a declaration
+*** Error 43 "main.c" Line 65(32,33): Expecting a declaration
+*** Error 43 "main.c" Line 65(32,33): Expecting a declaration
+*** Error 43 "main.c" Line 66(4,5): Expecting a declaration
+*** Error 43 "main.c" Line 73(4,10): Expecting a declaration
+*** Error 43 "main.c" Line 73(10,11): Expecting a declaration
+*** Error 43 "main.c" Line 73(16,17): Expecting a declaration
+*** Error 43 "main.c" Line 73(16,17): Expecting a declaration
+*** Error 43 "main.c" Line 73(17,18): Expecting a declaration
+*** Error 43 "main.c" Line 74(1,2): Expecting a declaration
+      49 Errors,  17 Warnings.

@@ -3,6 +3,7 @@
 #define STACK_USE_ARP   1
 #define STACK_USE_TCP   1
 #include "ccstcpip.h"
+//#include "modbus_tcp.c"  // addding modbus tcp driver.
 
 
 #if STACK_USE_CCS_PICENS
@@ -17,6 +18,9 @@
 
 #define EXAMPLE_TCP_PORT   (int16)502
 
+//#define MODBUS_UNIT 0xF7
+//#define MODBUS_SERIAL_RX_BUFFER_SIZE 64
+
 char lcd_str[NUM_LISTEN_SOCKETS][20];
 
 //this function is called by MyTCPTask() when the specified socket is connected
@@ -25,27 +29,35 @@ char lcd_str[NUM_LISTEN_SOCKETS][20];
 int8 TCPConnectedTask(TCP_SOCKET socket, int8 which) {
    char c[];
    static int8 counter[NUM_LISTEN_SOCKETS];
-   static int8 button1_held[NUM_LISTEN_SOCKETS];
-   char mb_frame[] ;
+   static int8 button1_held[NUM_LISTEN_SOCKETS];   
    char str[20];
    int8 i=0;
    
    if (TCPIsGetReady(socket)) {
-      mb_frame = TCPGetArray(socket,c,12); 
-      if(strlen(mb_frame)==12)
+      TCPGetArray(socket,c,12);
+      get_data = c;
+      array_to_frame(get_data);
+      
+      if(modbus_rx.len==12)
       {
-         if((mb_frame[5]== 6) && (mb_frame[6]== 250) && (mb_frame[7]== 3) && (mb_frame[11]== 2))
+         if(modbus_rx.unit==MODBUS_UNIT)
             {
-               output_high(PIN_B5);
+              switch(modbus_rx.func)
+              {
+                  case FUNC_READ_HOLDING_REGISTERS:
+                  case FUNC_READ_INPUT_REGISTERS:
+                     if((modbus_rx.data[0] || modbus_rx.data[2] ||
+                  modbus_rx.data[1] >= 8 || modbus_rx.data[3]+modbus_rx.data[1] > 8)
+                  modbus_exception_rsp(MODBUS_ADDRESS,modbus_rx.func,ILLEGAL_DATA_ADDRESS);)
             }
-         else
-         {
-            output_low(PIN_B5);
-         }
+         
       }
        else
        {
-            output_low(PIN_B5);
+         arrayi_hazirla()
+         TCPPutArray(socket,,strlen());
+         TCPFlush(socket);   
+         output_low(PIN_B5);
        }
          lcd_str[which][i++]=c;
          if (i>=20) {i=19;}
@@ -186,7 +198,7 @@ void main(void)
 //Setup_Oscillator parameter not selected from Intr Oscillator Config tab
 
    // TODO: USER CODE!!
-   
+   char get_data[];
    
 
    printf("\r\n\nCCS TCP/IP TUTORIAL, EXAMPLE 13B (TCP SERVER)\r\n");
@@ -203,7 +215,13 @@ void main(void)
    lcd_putc('\f');
 
    StackInit();
-
+   /*  // registers
+   int8 coils = 0b00000101;
+   int8 inputs = 0b00001001;
+   int16 hold_regs[] = {0x8800,0x7700,0x6600,0x5500,0x4400,0x3300,0x2200,0x1100};
+   int16 input_regs[] = {0x1100,0x2200,0x3300,0x4400,0x5500,0x6600,0x7700,0x8800};
+   int16 event_count = 0;
+   */
    while(TRUE) {
       StackTask();
       MyTCPTask();

@@ -20,7 +20,8 @@ Link=0
 Count=1
 1=C:\Users\AKAYIKCI\Documents\Kiþisel\Elektronik\ccs c Pic\Uygulamalar\TCPSERVER_Project\main
 [Opened Files]
-1=main.c
-2=
-3=
-4=
+1=..\..\..\Kiþisel\Elektronik\ccs c Pic\Uygulamalar\TCPSERVER_Project\main.c
+2=..\..\..\..\..\..\Program Files (x86)\PICC\TCP-IP\PIC Examples Source\ex13.c
+3=..\..\modbus_tcp_driver\Modbus_tcp_driver\modbus_slave.c
+4=..\..\..\Kiþisel\Elektronik\ccs c Pic\Uygulamalar\TCPSERVER_Project\ccstcpip.h
+5=
